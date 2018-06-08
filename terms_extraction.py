@@ -88,7 +88,7 @@ class MI(object):
         result = []
         stopWords = self.stop_words_noun_Noun(file)    
         for num, line in enumerate(self.file):
-            for token in generator666.get_token(line):
+            for token in generator.get_token(line):
                 if token.token_type == 'Alpha':
                    array.append(token.string)        
         wordFilter = lambda w: w in stopWords
